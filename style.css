@@ -1,0 +1,89 @@
+/* Googleフォントのインポート（創英角ポップ体） */
+@import url('https://fonts.googleapis.com/earlyaccess/soukoumincho.css');
+
+/* 全体のスタイル設定 */
+body {
+    background-color: #ff00ff;  /* 背景色をマゼンタに設定 */
+    color: #00ff00;             /* 文字色を緑色に設定 */
+    text-align: center;         /* テキストを中央寄せ */
+    overflow: hidden;           /* 画面外のコンテンツを隠す */
+    height: 100vh;              /* 高さを画面全体に設定 */
+    position: relative;         /* 絶対配置を使えるようにする */
+}
+
+/* .letterクラスのスタイル設定 */
+.letter {
+    font-size: 150px;                                        /* 文字の大きさ */
+    font-family: "創英角ポップ体", "Arial Black", sans-serif; /* フォントファミリー */
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* グラデーション背景 */
+    -webkit-background-clip: text;                             /* 背景を文字に適用 */
+    color: transparent;                                        /* 文字の色を透明に */
+    text-shadow: 10px 10px 20px rgba(255, 0, 0, 0.8), -10px -10px 20px rgba(0, 255, 255, 0.8); /* 文字に影をつける */
+    display: inline-block;                                    /* インラインブロックで配置 */
+    position: absolute;                                       /* 絶対配置 */
+    cursor: pointer;                                         /* クリック可能なカーソル */
+    transition: transform 0.1s;                               /* 変形のアニメーション */
+}
+
+/* .wishlist-buttonクラスのスタイル設定 */
+.wishlist-button {
+    position: absolute;                                      /* 絶対配置 */
+    right: 20px;                                             /* 画面右に配置 */
+    top: 50%;                                                 /* 画面中央に配置（縦方向） */
+    transform: translateY(-50%);                              /* ボタンを中央に調整 */
+    padding: 10px 20px;                                       /* ボタンのパディング */
+    font-size: 20px;                                          /* フォントサイズ */
+    background-color: yellow;                                /* 背景色を黄色に設定 */
+    border: 3px solid red;                                   /* 赤い枠線 */
+    font-family: "創英角ポップ体", sans-serif;               /* フォントファミリー */
+    cursor: pointer;                                         /* クリック可能なカーソル */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);             /* ボタンに影をつける */
+}
+
+/* 気持ち悪い色に変色させるアニメーション */
+@keyframes colorChange {
+    0% {
+        color: #ff0000;  /* 赤 */
+    }
+    25% {
+        color: #00ff00;  /* 緑 */
+    }
+    50% {
+        color: #0000ff;  /* 青 */
+    }
+    75% {
+        color: #ff00ff;  /* 紫 */
+    }
+    100% {
+        color: #ffff00;  /* 黄 */
+    }
+}
+
+body {
+    background-color: #ff00ff;  /* 背景色を元に戻す */
+    color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+}
+/* 真面目な話ボタンのスタイル */
+.serious-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    opacity: 0.5;
+    transition: opacity 0.3s, transform 0.2s;
+}
+
+.serious-button:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
