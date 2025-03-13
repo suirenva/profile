@@ -1,0 +1,36 @@
+body {
+    background-color: #222;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.profile-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.profile-name {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.profile-description,
+.profile-likes,
+.profile-dislikes {
+    font-size: 18px;
+    margin: 5px 0;
+}
